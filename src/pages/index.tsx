@@ -23,7 +23,7 @@ export default function Home({ product }: HomeProps) {
         <section className={styles.hero}>
           <span>👏🏼 Hey, welcome!</span>
           <h1>
-            News aboute the <span>React</span> world.
+            News about the <span>React</span> world.
           </h1>
           <p>
             Get access to all the publications <br />
@@ -54,7 +54,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       product,
     },
-    // NOTE - Tempo em segundos que uma página se mantem sem ser revalidada/reconstruída
+    // NOTE - Tempo em segundos que uma página se mantém sem ser revalidada/reconstruída
     // Caso haja uma mudança no código da página, após o tempo definido, ele aparecerá lá
     revalidate: 60 * 60 * 24, // 24 horas
   };
